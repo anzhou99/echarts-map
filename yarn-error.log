@@ -1,0 +1,53 @@
+Arguments: 
+  E:\program\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add rollup/plugin-json --dev
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;E:\program\;E:\program\svn\bin;E:\program\svn\bin;C:\Users\admin\AppData\Local\Yarn\bin;E:\program\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\ProgramData\chocolatey\bin;C:\Users\admin\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python39\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;;E:\program\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\Fiddler
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://github.com/rollup/plugin-json: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\admin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141289:19)
+      at Object.onceWrapper (events.js:421:28)
+      at ClientRequest.emit (events.js:315:20)
+      at TLSSocket.emitRequestTimeout (_http_client.js:784:9)
+      at Object.onceWrapper (events.js:421:28)
+      at TLSSocket.emit (events.js:327:22)
+      at TLSSocket.Socket._onTimeout (net.js:483:8)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
+
+npm manifest: 
+  {
+    "name": "geo",
+    "version": "1.0.0",
+    "description": "地图三级联动",
+    "main": "main.js",
+    "scripts": {
+      "build": "rollup -c",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "geo"
+    ],
+    "author": "stjerne",
+    "license": "ISC",
+    "devDependencies": {
+      "rollup-plugin-serve": "^1.1.0",
+      "rollup-plugin-terser": "^7.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,19 @@
+{
+  "name": "geo",
+  "version": "1.0.0",
+  "description": "地图三级联动",
+  "main": "main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geo"
+  ],
+  "author": "stjerne",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

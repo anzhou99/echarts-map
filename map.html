@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+      }
+      .chart-container {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        display: flex;
+        padding: 56px 50px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: rgb(8, 19, 37);
+      }
+
+      .chart-container > .map-container {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+        position: relative;
+      }
+
+      .chart-container > .map-container > #back-btn {
+        box-sizing: border-box;
+        display: none;
+        align-items: center;
+        padding: 7px 15px;
+        text-align: center;
+        color: rgb(8, 19, 37);
+        background-color: #eee;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+      }
+
+      .chart-container > .map-container > #back-btn > span {
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-left: 4px;
+      }
+
+      .chart-container > .line-container {
+        box-sizing: border-box;
+        width: 38%;
+        height: 100%;
+      }
+    </style>
+    <title>三级下钻地图</title>
+  </head>
+
+  <body>
+    <div class="chart-container">
+      <div class="map-container">
+        <div id="back-btn">
+          <svg
+            t="1628226435260"
+            class="icon"
+            viewBox="0 0 1160 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="738"
+            width="18"
+            height="18"
+          >
+            <path
+              d="M716.875615 204.833607H511.033804c-17.139481 0-30.91828-13.778799-30.918281-30.91828V62.340663c0-22.684608-24.028881-37.80768-44.697079-27.557598l-418.404988 209.874631c-22.684608 11.090253-22.684608 44.024943 0 55.115195L436.090581 509.14342c20.668198 10.250082 44.697079-4.87299 44.697079-27.557598v-110.734493c0-17.139481 13.778799-30.91828 30.91828-30.91828h224.997703c202.313095 0 304.141779 84.689202 304.141779 254.739744 0 175.427634-104.685264 263.645553-313.887759 263.645553H160.010502c-17.139481 0-30.91828 13.778799-30.91828 30.91828V962.835576c0 17.139481 13.778799 30.91828 30.91828 30.91828H732.670824c285.658024 0 428.150968-128.714145 428.150968-385.470298 0-269.190679-148.03807-403.449951-443.946177-403.449951z m0 0"
+              p-id="739"
+              fill="rgb(8, 19, 37)"
+            ></path>
+          </svg>
+          <span>返回</span>
+        </div>
+        <div id="chart-map"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.3.0/dist/echarts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+
+    <script src="/dist/main.js"></script>
+  </body>
+</html>
